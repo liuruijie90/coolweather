@@ -5,3 +5,8 @@ coolweather中具体的步骤：
 4.三个实体类。（每张表对应一个实体类）
 5.创建一个CoolWeatherDB 类，这个类会把一些常用的数据库操作封装起来。(CoolWeatherDB 是一个单例，我们将它的结构方法私有化，并提供了一个getInstance()方法来获取CoolWeatherDB的实例，这样就可以保证全局范围内只有一个CoolWeatherDB的实例。接下来提供了6组方法，SaveProvince(),loadProvinces(),saveCity(),loadCities(),saveCounty(),loadCounties()，分别用于存储省份数据，读取所有省份数据，存储城市数据，读取某省内所有城市数据，存储县数据，读取某市内所有县的数据)
 6.第一阶段的代码，提交代码（不知道如何提交）
+
+
+
+7.遍历全国省市县数据（数据是从服务端获取到的，因此这里和服务器的交互是必不可少的），在util包下先增加一个HttpUtil类
+
