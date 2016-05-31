@@ -9,4 +9,7 @@ coolweather中具体的步骤：
 
 
 7.遍历全国省市县数据（数据是从服务端获取到的，因此这里和服务器的交互是必不可少的），在util包下先增加一个HttpUtil类
+8.在util包下添加HttpCallbackListener接口。
+9.在util包下新建一个Utility类，工具类来解析和处理“代号｜城市,代号｜城市”这种数据。handleProvinceResponse，handleCityResponse，handleCountyResponse这三个方法，分别用于解析和处理服务器返回的省级，市级和县级数据。解析的规则就是，先按逗号隔开，再按单竖线分隔，接着将解析出来的数据设置到实体类中，最后调用CoolWeatherDB中的三个save方法将数据存储到相应的表中。
+10.界面
 
